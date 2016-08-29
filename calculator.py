@@ -15,6 +15,18 @@ def division(x,y):
 def multiplication(x,y):
 	return x*y
 
+def program(choice):
+	if client_input == 1:
+		print addition(num1,num2)
+	elif client_input == 2:
+		print substraction(num1,num2)
+	elif client_input == 3:
+		print multiplication(num1,num2)
+	elif client_input == 4:
+		print division(num1,num2)
+	else:
+		exit()
+
 print "Welcome to calculators.py"
 print "Choose a program"
 print "1. Addition"
@@ -27,13 +39,4 @@ client_input = int(input('Enter choice: '))
 num1 = int(input('Value of x: '))
 num2 = int(input('Value of y: '))
 
-if client_input == 1:
-	print addition(num1,num2)
-elif client_input == 2:
-	print substraction(num1,num2)
-elif client_input == 3:
-	print multiplication(num1,num2)
-elif client_input == 4:
-	print division(num1,num2)
-else:
-	exit()
+program(client_input)
